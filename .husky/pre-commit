@@ -1,0 +1,2 @@
+# Add a pre-commit hook to Husky that runs linting and formatting via Lint-Staged
+npx lint-staged

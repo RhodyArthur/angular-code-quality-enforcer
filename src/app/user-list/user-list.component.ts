@@ -3,23 +3,30 @@ import { UserService } from '../user.service';
 import { User } from '../interface/user';
 
 @Component({
-  selector: 'app-user-list',
-  template: `
-    <ul>
-      <li *ngFor="let user of users">{{ user.name }} ({{ user.age }})</li>
-    </ul>
-  `,
-  styles: [`
-    ul { list-style-type: none; padding: 0; }
-    li { margin-bottom: 10px; }
-  `]
+    selector: 'app-user-list',
+    template: `
+        <ul>
+            <li *ngFor="let user of users">{{ user.name }} ({{ user.age }})</li>
+        </ul>
+    `,
+    styles: [
+        `
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+        `,
+    ],
 })
 export class UserListComponent implements OnInit {
-  users!: User[];
+    users!: User[];
 
-  constructor(private userService: UserService) {}
+    constructor(private userService: UserService) {}
 
-  ngOnInit() {
-    this.users = this.userService.getUsers();
-  }
+    ngOnInit() {
+        this.users = this.userService.getUsers();
+    }
 }

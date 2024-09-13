@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UserListComponent } from './user-list.component';
+import { LinterComponent } from './linter.component';
 
-describe('UserListComponent', () => {
-    let component: UserListComponent;
-    let fixture: ComponentFixture<UserListComponent>;
+describe('LinterComponent', () => {
+    let component: LinterComponent;
+    let fixture: ComponentFixture<LinterComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            imports: [UserListComponent],
+            imports: [LinterComponent],
         }).compileComponents();
 
-        fixture = TestBed.createComponent(UserListComponent);
+        fixture = TestBed.createComponent(LinterComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });
