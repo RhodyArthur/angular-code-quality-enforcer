@@ -32,6 +32,7 @@ This creates the .eslintrc.json file. It also updates the angular.json and packa
 Added custom rules: 
  - semi and quotes.
  - @typescript-eslint/no-explicit-any: Ensures explicit usage of any type is avoided.
+ - max-lines: enforces a maximum of 35 lines in a file, skipping whitespaces.
 
 ## Fix Linting Errors and Warnings
 Run ESlint
@@ -41,11 +42,12 @@ Run ESlint
 
 Initial results:
 
-5 errors
-4 warnings related to the use of single quotes in app.component.ts.
-Fixes Applied
-Created an interface to replace the usage of any type.
-Updated code to adhere to single quote conventions.
+
+> 5 errors
+> 4 warnings related to the use of single quotes in app.component.ts.
+> Fixes Applied
+> Created an interface to replace the usage of any type.
+> Updated code to adhere to single quote conventions.
 
 Run ESLint again to confirm all issues are resolved:
 ```bash

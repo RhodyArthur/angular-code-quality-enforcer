@@ -36,7 +36,8 @@
         ],
         // custom rules
         "semi": ["error", "always"],
-        "quotes": ["error", "single"]
+        "quotes": ["error", "single"],
+        "max-lines": ["error", {"max": 35, "skipBlankLines": true}]
       }
     },
     {

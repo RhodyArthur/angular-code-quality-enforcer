@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { User } from './interface/user';
 
 @Injectable({
     providedIn: 'root',
@@ -15,7 +16,7 @@ export class UserService {
         return this.users;
     }
 
-    addUser(user) {
+    addUser(user: User) {
         this.users.push(user);
     }
 }

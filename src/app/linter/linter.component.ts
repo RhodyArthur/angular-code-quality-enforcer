@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
     templateUrl: './linter.component.html',
     styleUrl: './linter.component.css',
 })
-export class LinterComponent {}
+export class LinterComponent {
+    message: string = 'All files passed linting';
+
+    displayMsg(msg: string): string {
+        return msg;
+    }
+}

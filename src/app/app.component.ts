@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { UserListComponent } from './user-list/user-list.component';
+import { LinterComponent } from './linter/linter.component';
 
 @Component({
+    standalone: true,
+    imports: [UserListComponent, LinterComponent],
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
