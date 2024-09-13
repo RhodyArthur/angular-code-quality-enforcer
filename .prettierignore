@@ -1,0 +1,4 @@
+#  exclude files and directories from being formatted by Prettier
+node_modules
+dist
+build
